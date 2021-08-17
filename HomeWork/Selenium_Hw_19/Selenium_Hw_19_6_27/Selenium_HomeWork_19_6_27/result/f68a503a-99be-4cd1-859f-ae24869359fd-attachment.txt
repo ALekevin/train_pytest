@@ -1,0 +1,14 @@
+[32mINFO    [0m root:main_page.py:17 点击通讯录
+[32mINFO    [0m root:contact_page.py:25 点击添加按钮
+[32mINFO    [0m root:contact_page.py:28 点击添加部门按钮
+[32mINFO    [0m root:create_department_page.py:23 获取公司名
+[32mINFO    [0m root:create_department_page.py:26 输入部门名称
+[32mINFO    [0m root:create_department_page.py:29 选择所属部门
+[32mINFO    [0m root:create_department_page.py:37 点击确定
+[32mINFO    [0m root:contact_page.py:25 点击添加按钮
+[32mINFO    [0m root:contact_page.py:28 点击添加部门按钮
+[32mINFO    [0m root:create_department_page.py:23 获取公司名
+[32mINFO    [0m root:create_department_page.py:26 输入部门名称
+[32mINFO    [0m root:create_department_page.py:29 选择所属部门
+[32mINFO    [0m root:create_department_page.py:37 点击确定
+[32mINFO    [0m root:contact_page.py:41 获取失败信息

@@ -1,0 +1,1 @@
+INFO     root:test_user.py:18 初始化：获取token

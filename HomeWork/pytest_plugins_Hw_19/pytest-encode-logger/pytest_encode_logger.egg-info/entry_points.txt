@@ -1,0 +1,3 @@
+[pytest11]
+pytest_encode_logger = pytest_encode_logger
+

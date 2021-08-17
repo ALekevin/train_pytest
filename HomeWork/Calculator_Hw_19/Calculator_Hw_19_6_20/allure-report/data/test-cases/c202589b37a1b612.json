@@ -1,0 +1,157 @@
+{
+  "uid" : "c202589b37a1b612",
+  "name" : "[300000, 100000, 3]_除法成功",
+  "fullName" : "test_calculator_fixture.TestCalc#test_div",
+  "historyId" : "5e271224080501a12aba58e36d364df3",
+  "time" : {
+    "start" : 1627221259814,
+    "stop" : 1627221259815,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "get_calc_div_datas",
+    "time" : {
+      "start" : 1627221259813,
+      "stop" : 1627221259813,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "get_calc",
+    "time" : {
+      "start" : 1627221259666,
+      "stop" : 1627221259667,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1627221259536,
+      "stop" : 1627221259666,
+      "duration" : 130
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "84b5a75198ebeb63",
+      "name" : "log",
+      "source" : "84b5a75198ebeb63.txt",
+      "type" : "text/plain",
+      "size" : 88
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "get_calc::0",
+    "time" : {
+      "start" : 1627221259825,
+      "stop" : 1627221259825,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "计算器模块"
+  }, {
+    "name" : "story",
+    "value" : "除法功能"
+  }, {
+    "name" : "tag",
+    "value" : "div"
+  }, {
+    "name" : "suite",
+    "value" : "test_calculator_fixture"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-0E08AHKM"
+  }, {
+    "name" : "thread",
+    "value" : "48852-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_calculator_fixture"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "get_calc_div_datas",
+    "value" : "[300000, 100000, 3]"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "969aec1875483925",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627220852559,
+        "stop" : 1627220852559,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "3a3af0d8a262a938",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624766424668,
+        "stop" : 1624766424669,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "div" ]
+  },
+  "source" : "c202589b37a1b612.json",
+  "parameterValues" : [ "[300000, 100000, 3]" ]
+}

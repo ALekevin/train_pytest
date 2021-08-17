@@ -1,0 +1,1 @@
+INFO     root:test_calculator_fixture.py:26 test_sub 数据 [20000, 10000, 10000]

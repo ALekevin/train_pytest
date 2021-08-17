@@ -1,0 +1,2 @@
+INFO     root:basepage.py:13 进入通讯录页
+INFO     root:basepage.py:13 滑动查找添加成员按钮

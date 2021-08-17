@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="7" time="0.190" timestamp="2021-06-17T20:35:59.394871" hostname="xixi"><testcase classname="test_calc" name="test_add1" time="0.056" /><testcase classname="test_calc" name="test_add2" time="0.001"><failure message="assert 300 == 201&#10; +  where 201 = add(1, 200)">def test_add2():
+        print("300 == add(100,200)")
+&gt;       assert 300 == add(1,200)
+E       assert 300 == 201
+E        +  where 201 = add(1, 200)
+
+test_calc.py:16: AssertionError</failure></testcase><testcase classname="test_calc" name="test_add3" time="0.001"><failure message="assert 300 == 203&#10; +  where 203 = add(3, 200)">def test_add3():
+        print("300 == add(100,200)")
+&gt;       assert 300 == add(3,200)
+E       assert 300 == 203
+E        +  where 203 = add(3, 200)
+
+test_calc.py:20: AssertionError</failure></testcase><testcase classname="test_calc" name="test_add4" time="0.001" /><testcase classname="test_calculator.TestCalculator" name="test_add" time="0.001" /><testcase classname="test_calculator.TestCalculator" name="test_add1" time="0.001" /><testcase classname="test_calculator.TestCalculator" name="test_div" time="0.001" /></testsuite></testsuites>

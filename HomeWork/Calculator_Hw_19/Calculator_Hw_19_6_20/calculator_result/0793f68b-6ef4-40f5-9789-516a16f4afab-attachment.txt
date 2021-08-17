@@ -1,0 +1,1 @@
+INFO     root:test_calculator_fixture.py:42 test_div 数据 [300000, 100000, 3]

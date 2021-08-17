@@ -1,0 +1,1 @@
+INFO     root:test_calculator_fixture.py:23 test_add 数据 [-1, -2, -3]

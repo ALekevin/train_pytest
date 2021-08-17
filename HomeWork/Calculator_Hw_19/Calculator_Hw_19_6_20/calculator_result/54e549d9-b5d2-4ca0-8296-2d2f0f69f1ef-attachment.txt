@@ -1,0 +1,1 @@
+INFO     root:test_calculator_fixture.py:34 test_mul 数据 [0.1, 0.2, 0.02]

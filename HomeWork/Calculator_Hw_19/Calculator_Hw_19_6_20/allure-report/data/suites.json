@@ -1,0 +1,273 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "test_calculator_fixture",
+    "children" : [ {
+      "name" : "TestCalc",
+      "children" : [ {
+        "name" : "[1, 2, 3]_加法成功",
+        "uid" : "bd34adf3c38f17bb",
+        "parentUid" : "3d8828e172b7573cde6d8c5e19bad42e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627221259667,
+          "stop" : 1627221259669,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[1, 2, 3]" ]
+      }, {
+        "name" : "[0.1, 2e-10, 0.1000000002]_加法成功",
+        "uid" : "713503798407ea99",
+        "parentUid" : "3d8828e172b7573cde6d8c5e19bad42e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627221259673,
+          "stop" : 1627221259675,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[0.1, 2e-10, 0.1000000002]" ]
+      }, {
+        "name" : "[-1, -2, -3]_加法成功",
+        "uid" : "35292a9290bbc392",
+        "parentUid" : "3d8828e172b7573cde6d8c5e19bad42e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627221259697,
+          "stop" : 1627221259699,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[-1, -2, -3]" ]
+      }, {
+        "name" : "[100000, 200000, 300000]_加法成功",
+        "uid" : "a45793d00606c2ee",
+        "parentUid" : "3d8828e172b7573cde6d8c5e19bad42e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627221259703,
+          "stop" : 1627221259705,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[100000, 200000, 300000]" ]
+      }, {
+        "name" : "[0, 1, 1]_加法成功",
+        "uid" : "75c37cf2bae30c39",
+        "parentUid" : "3d8828e172b7573cde6d8c5e19bad42e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627221259709,
+          "stop" : 1627221259713,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[0, 1, 1]" ]
+      }, {
+        "name" : "[2, 1, 1]_减法成功",
+        "uid" : "e4e066c12a415d14",
+        "parentUid" : "3d8828e172b7573cde6d8c5e19bad42e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627221259719,
+          "stop" : 1627221259721,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[2, 1, 1]" ]
+      }, {
+        "name" : "[0.2, 0.1, 0.1]_减法成功",
+        "uid" : "b3969b319a325528",
+        "parentUid" : "3d8828e172b7573cde6d8c5e19bad42e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627221259725,
+          "stop" : 1627221259727,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[0.2, 0.1, 0.1]" ]
+      }, {
+        "name" : "[-2, -1, -1]_减法成功",
+        "uid" : "e50478033ccaf866",
+        "parentUid" : "3d8828e172b7573cde6d8c5e19bad42e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627221259733,
+          "stop" : 1627221259734,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[-2, -1, -1]" ]
+      }, {
+        "name" : "[20000, 10000, 10000]_减法成功",
+        "uid" : "194c96d59d79ef64",
+        "parentUid" : "3d8828e172b7573cde6d8c5e19bad42e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627221259738,
+          "stop" : 1627221259739,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[20000, 10000, 10000]" ]
+      }, {
+        "name" : "[0, 1, -1]_减法成功",
+        "uid" : "98750d43c4578150",
+        "parentUid" : "3d8828e172b7573cde6d8c5e19bad42e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627221259748,
+          "stop" : 1627221259749,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[0, 1, -1]" ]
+      }, {
+        "name" : "[1, 2, 2]_乘法成功",
+        "uid" : "33c108ba11e64961",
+        "parentUid" : "3d8828e172b7573cde6d8c5e19bad42e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627221259754,
+          "stop" : 1627221259756,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[1, 2, 2]" ]
+      }, {
+        "name" : "[0.1, 0.2, 0.02]_乘法成功",
+        "uid" : "ead7e2c1cdf6e9fb",
+        "parentUid" : "3d8828e172b7573cde6d8c5e19bad42e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627221259760,
+          "stop" : 1627221259762,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[0.1, 0.2, 0.02]" ]
+      }, {
+        "name" : "[-1, -2, 2]_乘法成功",
+        "uid" : "a87880172d575b10",
+        "parentUid" : "3d8828e172b7573cde6d8c5e19bad42e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627221259767,
+          "stop" : 1627221259769,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[-1, -2, 2]" ]
+      }, {
+        "name" : "[100000, 300000, 30000000000]_乘法成功",
+        "uid" : "31f6fb734dab1997",
+        "parentUid" : "3d8828e172b7573cde6d8c5e19bad42e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627221259772,
+          "stop" : 1627221259776,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[100000, 300000, 30000000000]" ]
+      }, {
+        "name" : "[0, 2, 0]_乘法成功",
+        "uid" : "886dcf8c9194912c",
+        "parentUid" : "3d8828e172b7573cde6d8c5e19bad42e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627221259783,
+          "stop" : 1627221259784,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[0, 2, 0]" ]
+      }, {
+        "name" : "[2, 1, 2]_除法成功",
+        "uid" : "47ca97c9bd84be66",
+        "parentUid" : "3d8828e172b7573cde6d8c5e19bad42e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627221259789,
+          "stop" : 1627221259792,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[2, 1, 2]" ]
+      }, {
+        "name" : "[0.1, 0.2, 0.5]_除法成功",
+        "uid" : "d3d20984e1971258",
+        "parentUid" : "3d8828e172b7573cde6d8c5e19bad42e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627221259798,
+          "stop" : 1627221259800,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[0.1, 0.2, 0.5]" ]
+      }, {
+        "name" : "[-2, -2, 1]_除法成功",
+        "uid" : "7115c27067841f7a",
+        "parentUid" : "3d8828e172b7573cde6d8c5e19bad42e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627221259804,
+          "stop" : 1627221259807,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[-2, -2, 1]" ]
+      }, {
+        "name" : "[300000, 100000, 3]_除法成功",
+        "uid" : "c202589b37a1b612",
+        "parentUid" : "3d8828e172b7573cde6d8c5e19bad42e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627221259814,
+          "stop" : 1627221259815,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[300000, 100000, 3]" ]
+      }, {
+        "name" : "[2, 0, 0]_除法成功",
+        "uid" : "3b2872f54989e8ec",
+        "parentUid" : "3d8828e172b7573cde6d8c5e19bad42e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627221259820,
+          "stop" : 1627221259823,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[2, 0, 0]" ]
+      } ],
+      "uid" : "3d8828e172b7573cde6d8c5e19bad42e"
+    } ],
+    "uid" : "ce4ec3541faf002a01c20b073f5b6d57"
+  } ],
+  "name" : "suites"
+}

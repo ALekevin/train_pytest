@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: pytest-encode-logger
+Version: 1.0
+Summary: set your encoding and logger
+Home-page: https://github.com/ALekevin/Hogwartsck18/tree/master/HomeWork/pytest_plugins_Hw_19
+Author: kevin
+Author-email: 260317442@qq.com
+License: proprietary
+Description: Show Chinese for your mark.parametrize(). Define logger variable for getting your log
+Keywords: pytest,py.test,pytest_encode,logger
+Platform: UNKNOWN
+Classifier: Framework :: Pytest
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Testing
+Classifier: Programming Language :: Python :: 3.8

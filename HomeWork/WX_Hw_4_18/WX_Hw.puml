@@ -1,0 +1,13 @@
+@startuml
+
+participant 企业微信主页面 as main
+
+participant 通讯录页面 as contact
+
+participant 新建部门页面 as create_group
+
+main -> contact: 点击通讯录按钮
+main -> add_member: 点击添加成员按钮
+add_member -> contact : 1. 填写人员信息 \n 2.点击保存
+contact -> contact: 获取成员列表
+@enduml
