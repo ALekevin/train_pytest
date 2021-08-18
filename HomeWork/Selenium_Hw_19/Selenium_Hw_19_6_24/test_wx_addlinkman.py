@@ -69,6 +69,8 @@ class TestWxlinkname:
         for cookie in cookies:
             self.driver.add_cookie(cookie)
         self.driver.get('https://work.weixin.qq.com/wework_admin/frame')
+        self.driver.find_element_by_id('i18nDropdown').click()
+        self.driver.find_element(By.XPATH,"//*[@id='i18nDropdown']/div//li[1]").click()
         self.driver.find_element_by_id('menu_contacts').click()
         sleep(2)
         self.driver.save_screenshot('./result/a.png')
