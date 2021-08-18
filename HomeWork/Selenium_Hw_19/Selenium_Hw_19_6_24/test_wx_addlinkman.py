@@ -49,8 +49,9 @@ class TestWxlinkname:
         self.driver.find_element(By.XPATH,"//*[text()='lekaixin1']/../..//*[@class='ww_checkbox']").click()
         self.driver.find_element(By.XPATH, "//*[@class='ww_operationBar']//a[text()='删除']").click()
         self.driver.find_element(By.XPATH, "//*[text()='确认']").click()
+        sleep(2)
         self.driver.find_element(By.XPATH, "//*[text()='删除成功']")
-        self.driver.close()
+        self.driver.quit()
 
 
     # def test_login(self):
