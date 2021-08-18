@@ -18,9 +18,6 @@ class TestWxlinkname:
         config.read(os.path.join(os.environ['HOME'], 'iselenium.ini'))
         return config
 
-    def tearDown(self):
-        self.driver.quit()
-
     def setup(self):
         print('开始测试')
         config = self.get_config()
