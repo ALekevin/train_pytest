@@ -15,7 +15,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 class TestWxlinkname:
     def get_config(self):
         config = configparser.ConfigParser()
-        config.read(os.path.join("C:",os.environ['HOME'], 'iselenium.ini'))
+        config.read(os.path.join(os.environ['HOME'], 'iselenium.ini'))
         return config
 
     def tearDown(self):
