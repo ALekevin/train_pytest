@@ -62,9 +62,6 @@ class TestWxlinkname:
 
 
     def test_add_linkname(self):
-        self.driver=webdriver.Chrome()
-        self.driver.maximize_window()
-        self.driver.implicitly_wait(5)
         self.driver.get('https://work.weixin.qq.com/wework_admin/frame')
         with open('cookies.yaml', 'r', encoding='UTF-8') as f:
             cookies=yaml.safe_load(f)
