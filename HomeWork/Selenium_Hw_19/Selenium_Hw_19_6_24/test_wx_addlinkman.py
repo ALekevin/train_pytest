@@ -24,6 +24,7 @@ class TestWxlinkname:
     def setup(self):
         print('开始测试')
         config = self.get_config()
+        print(config)
 
         # 控制是否采用无界面形式运行自动化测试
         try:
@@ -40,8 +41,7 @@ class TestWxlinkname:
             chrome_options.add_argument("window-size=1024,768")
             chrome_options.add_argument("--no-sandbox")
 
-        self.driver = webdriver.Chrome(executable_path=config.get('driver', 'chrome_driver'),
-                                       chrome_options=chrome_options)
+        self.driver = webdriver.Chrome(executable_path=config.get('driver', 'chrome_driver'), options=chrome_options)
 
     @allure.step('删除添加联系人')
     def teardown(self):
