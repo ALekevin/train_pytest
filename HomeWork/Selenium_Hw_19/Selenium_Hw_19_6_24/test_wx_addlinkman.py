@@ -1,17 +1,44 @@
+import configparser
+import os
 from time import sleep
 
 import allure
 import pytest
 import yaml
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
 
 class TestWxlinkname:
+    def get_config(self):
+        config = configparser.ConfigParser()
+        config.read(os.path.join("C:",os.environ['HOMEPATH'], 'iselenium.ini'))
+        return config
+
+    def tearDown(self):
+        self.driver.quit()
+
     def setup(self):
         print('开始测试')
+        config = self.get_config()
+
+        # 控制是否采用无界面形式运行自动化测试
+        try:
+            using_headless = os.environ["using_headless"]
+        except KeyError:
+            using_headless = None
+            print('没有配置环境变量 using_headless, 按照有界面方式运行自动化测试')
+
+        chrome_options = Options()
+        if using_headless is not None and using_headless.lower() == 'true':
+            print('使用无界面方式运行')
+            chrome_options.add_argument("--headless")
+
+        self.driver = webdriver.Chrome(executable_path=config.get('driver', 'chrome_driver'),
+                                       options=chrome_options)
 
     @allure.step('删除添加联系人')
     def teardown(self):
@@ -23,13 +50,13 @@ class TestWxlinkname:
         self.driver.close()
 
 
-    def test_login(self):
-        self.opt = webdriver.ChromeOptions()
-        self.opt.debugger_address = '127.0.0.1:9222'
-        self.driver = webdriver.Chrome(options=self.opt)
-        self.driver.get("https://work.weixin.qq.com/wework_admin/frame")
-        with open('cookies.yaml', 'w', encoding='UTF-8') as f:
-            yaml.safe_dump(self.driver.get_cookies(), f)
+    # def test_login(self):
+    #     self.opt = webdriver.ChromeOptions()
+    #     self.opt.debugger_address = '127.0.0.1:9222'
+    #     self.driver = webdriver.Chrome(options=self.opt)
+    #     self.driver.get("https://work.weixin.qq.com/wework_admin/frame")
+    #     with open('cookies.yaml', 'w', encoding='UTF-8') as f:
+    #         yaml.safe_dump(self.driver.get_cookies(), f)
 
 
     def test_add_linkname(self):
