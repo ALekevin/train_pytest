@@ -23,6 +23,7 @@ class TestWxlinkname:
         config = self.get_config()
         executable_path = config.get('driver', 'chrome_driver')
         print(executable_path)
+        print(type(executable_path))
 
         # 控制是否采用无界面形式运行自动化测试
         try:
