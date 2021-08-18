@@ -41,7 +41,7 @@ class TestWxlinkname:
             chrome_options.add_argument("--no-sandbox")
 
         self.driver = webdriver.Chrome(executable_path=config.get('driver', 'chrome_driver'),
-                                       options=chrome_options)
+                                       chrome_options=chrome_options)
 
     @allure.step('删除添加联系人')
     def teardown(self):
