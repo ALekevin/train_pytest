@@ -3,14 +3,20 @@
   name: wwrtx.d2st
   path: /
   secure: false
-  value: a7025073
-- domain: .qq.com
-  expiry: 1629272434
+  value: a9299258
+- domain: .work.weixin.qq.com
   httpOnly: false
-  name: _gat
+  name: wwrtx.vid
   path: /
   secure: false
-  value: '1'
+  value: '1688850930134082'
+- domain: .work.weixin.qq.com
+  expiry: 1631881502
+  httpOnly: false
+  name: wwrtx.i18n_lan_custom
+  path: /
+  secure: false
+  value: 'true'
 - domain: .work.weixin.qq.com
   httpOnly: false
   name: wwrtx.cs_ind
@@ -36,6 +42,13 @@
   path: /
   secure: false
   value: '23291388591170249'
+- domain: work.weixin.qq.com
+  expiry: 1629310890
+  httpOnly: true
+  name: ww_rtkey
+  path: /
+  secure: false
+  value: 1snc7b
 - domain: .work.weixin.qq.com
   httpOnly: true
   name: wwrtx.logined
@@ -47,9 +60,9 @@
   name: wwrtx.sid
   path: /
   secure: false
-  value: ZBOcwB3BMBo_FoXAOB0jY_xwPb65Y4a0-l8eBVNWNXSoZgyzw8OwknGZGm-nB49G
+  value: ZBOcwB3BMBo_FoXAOB0jYwdub_sTxkCaUUhqg2XWJHRmjP7wPtKGMnuk-xViIj4Q
 - domain: .qq.com
-  expiry: 1629358789
+  expiry: 1629375903
   httpOnly: false
   name: _gid
   path: /
@@ -69,12 +82,6 @@
   path: /
   secure: false
   value: HMiJldA/Qu
-- domain: .work.weixin.qq.com
-  httpOnly: false
-  name: wwrtx.vid
-  path: /
-  secure: false
-  value: '1688850930134082'
 - domain: .qq.com
   expiry: 1631252437
   httpOnly: false
@@ -90,14 +97,14 @@
   secure: true
   value: '0'
 - domain: .work.weixin.qq.com
-  expiry: 1631864401
+  expiry: 1631881502
   httpOnly: false
   name: wwrtx.i18n_lan
   path: /
   secure: false
   value: zh
 - domain: .qq.com
-  expiry: 1692344389
+  expiry: 1692361503
   httpOnly: false
   name: _ga
   path: /
@@ -133,7 +140,7 @@
   name: wwrtx.vst
   path: /
   secure: false
-  value: p2T30EDO5QmrUPCsOOOP15T4ot87_iNgDDZ0snCKjKv6UEWBzxcKxz7MqpbY6dDDzoldvrL9ppw13WnLfxkrblATpzghOxNDw5cPko9OcgZFjcEyrhWmVKe4qU3E7igH8wLUt5AyiHbMKtkznK7tDtsnXhQVvq0i01DoVahvczwPyud8zf0l0jyrYdNykyNtCsSGoamEimEkVjX6AmU1Ivox7hvWEtUEIhTEYGMExp8Qv7Ae6fH9QnISVvxQ1DhIVV9PzoxA7vYrA5VBcJ0ruA
+  value: 3uCrSIxlD0UdD3oSwBXTGnv8nj2iwEn4GFVdQwC4n6vzG6RRXtHR58ekiZKmyBHpHZjYVHZz6culr8D1JTo75X6I1BQA2fF1Zpavn4p1q1jNq9w48uzIK19amxYEo2O9rhvi04lu2J-_Abj1pdaxgNziBGKMNvkktTR-NbmltVLwYJqyi2GWxWGAshk9vuT3Iop4sfpZZ3hpQhGz9CRgvZ6kL7YxGAhcQuP-oazNj65M-weDy3eexOt0SGwLtJtB7SG_1TlUu0UQMrgqdxVYUw
 - domain: .work.weixin.qq.com
   expiry: 1660741971
   httpOnly: false
