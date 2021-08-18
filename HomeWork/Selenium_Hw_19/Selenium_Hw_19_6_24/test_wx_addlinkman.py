@@ -15,15 +15,15 @@ from selenium.webdriver.support.wait import WebDriverWait
 class TestWxlinkname:
     def get_config(self):
         config = configparser.ConfigParser()
-        config.read(os.path.join("C:",os.environ['HOMEPATH'], 'iselenium.ini'))
+        config.read(os.path.join(os.environ['HOME'], 'iselenium.ini'))
         return config
-
-    def tearDown(self):
-        self.driver.quit()
 
     def setup(self):
         print('开始测试')
         config = self.get_config()
+        executable_path = config.get('driver', 'chrome_driver')
+        print(executable_path)
+        print(type(executable_path))
 
         # 控制是否采用无界面形式运行自动化测试
         try:
@@ -36,9 +36,12 @@ class TestWxlinkname:
         if using_headless is not None and using_headless.lower() == 'true':
             print('使用无界面方式运行')
             chrome_options.add_argument("--headless")
+            chrome_options.add_argument('--disable-gpu')
+            chrome_options.add_argument("--disable-dev-shm-usage")
+            chrome_options.add_argument("--no-sandbox")
+            chrome_options.add_argument('window-size=1920x3000')
 
-        self.driver = webdriver.Chrome(executable_path=config.get('driver', 'chrome_driver'),
-                                       options=chrome_options)
+        self.driver = webdriver.Chrome(executable_path=executable_path, options=chrome_options)
 
     @allure.step('删除添加联系人')
     def teardown(self):
@@ -60,17 +63,17 @@ class TestWxlinkname:
 
 
     def test_add_linkname(self):
-        self.driver=webdriver.Chrome()
-        self.driver.maximize_window()
-        self.driver.implicitly_wait(5)
         self.driver.get('https://work.weixin.qq.com/wework_admin/frame')
         with open('cookies.yaml', 'r', encoding='UTF-8') as f:
             cookies=yaml.safe_load(f)
         for cookie in cookies:
             self.driver.add_cookie(cookie)
         self.driver.get('https://work.weixin.qq.com/wework_admin/frame')
+        self.driver.find_element_by_id('i18nDropdown').click()
+        self.driver.find_element(By.XPATH,"//*[@id='i18nDropdown']/div//li[1]").click()
         self.driver.find_element_by_id('menu_contacts').click()
         sleep(2)
+        self.driver.save_screenshot('./result/a.png')
         self.driver.find_element(By.XPATH,"//*[@class='ww_operationBar']//a[text()='添加成员']").click()
         self.driver.find_element(By.ID,"username").send_keys('lekaixin1')
         self.driver.find_element(By.ID,"memberAdd_english_name").send_keys('kevin1')
@@ -86,5 +89,5 @@ class TestWxlinkname:
         # self.driver.find_elements(By.XPATH, "//*[text()='保存成功']")
         WebDriverWait(self.driver,5).until(expected_conditions.visibility_of_element_located((By.XPATH,"//*[text()='保存成功']")))
         sleep(5)
-        self.driver.save_screenshot('./result/a.png')
+        self.driver.save_screenshot('./result/b.png')
         allure.attach.file('./result/a.png',attachment_type=allure.attachment_type.PNG)
