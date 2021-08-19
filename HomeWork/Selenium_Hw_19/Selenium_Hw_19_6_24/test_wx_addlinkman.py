@@ -36,10 +36,10 @@ class TestWxlinkname:
         if using_headless is not None and using_headless.lower() == 'true':
             print('使用无界面方式运行')
             chrome_options.add_argument("--headless")
-            chrome_options.add_argument('--disable-gpu')
-            chrome_options.add_argument("--disable-dev-shm-usage")
-            chrome_options.add_argument("--no-sandbox")
-            chrome_options.add_argument('window-size=1920x3000')
+        chrome_options.add_argument('--disable-gpu')
+        chrome_options.add_argument("--disable-dev-shm-usage")
+        chrome_options.add_argument("--no-sandbox")
+        chrome_options.add_argument('window-size=1920x3000')
 
         self.driver = webdriver.Chrome(executable_path=executable_path, options=chrome_options)
 
@@ -75,6 +75,7 @@ class TestWxlinkname:
         self.driver.find_element_by_id('menu_contacts').click()
         sleep(2)
         self.driver.find_element(By.XPATH,"//*[@class='ww_operationBar']//a[text()='添加成员']").click()
+        self.driver.save_screenshot('./result/a.png')
         self.driver.find_element(By.ID,"username").send_keys('lekaixin1')
         self.driver.find_element(By.ID,"memberAdd_english_name").send_keys('kevin1')
         self.driver.find_element(By.ID,"memberAdd_acctid").send_keys('lkx1')
@@ -89,5 +90,5 @@ class TestWxlinkname:
         # self.driver.find_elements(By.XPATH, "//*[text()='保存成功']")
         WebDriverWait(self.driver,5).until(expected_conditions.visibility_of_element_located((By.XPATH,"//*[text()='保存成功']")))
         sleep(5)
-        self.driver.save_screenshot('./result/a.png')
+        self.driver.save_screenshot('./result/b.png')
         allure.attach.file('./result/a.png',attachment_type=allure.attachment_type.PNG)
