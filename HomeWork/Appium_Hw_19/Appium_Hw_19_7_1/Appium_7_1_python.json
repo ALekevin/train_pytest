@@ -1,0 +1,13 @@
+{
+    "caps": {
+        "platformName": "Android",
+        "deviceName": "127.0.0.1:7555",
+        "udid": "127.0.0.1:7555",
+        "noReset": "True",
+        "automationName": "UiAutomator2",
+        "appPackage": "com.tencent.wework",
+        "appActivity": ".launch.LaunchSplashActivity",
+        "ensureWebviewsHavePages": "True"
+    },
+    "appium_server_url": "http://localhost:4723/wd/hub"
+}
