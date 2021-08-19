@@ -1,13 +1,14 @@
 # This sample code uses the Appium python client
 # pip install Appium-Python-Client
 # Then you can paste this into a file and simply run with Python
+import os
 from time import sleep
 
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 from faker import Faker
 from selenium.common.exceptions import NoSuchElementException
-
+from pytest_testconfig import config
 
 class TestAddMember:
     def setup_class(self):
@@ -15,13 +16,18 @@ class TestAddMember:
 
     def setup(self):
         caps = {}
-        caps["platformName"] = "Android"
-        caps["appPackage"] = "com.tencent.wework"
-        caps["appActivity"] = ".launch.LaunchSplashActivity"
-        caps["deviceName"] = "lkx"
-        caps["noReset"] = "true"
-        caps["ensureWebviewsHavePages"] = True
-        self.driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
+        appium_server_url = config['appium_server_url']
+        caps['platformName'] = config['caps']['platformName']
+        caps['udid'] = config['caps']['udid']
+        caps['deviceName'] = config['caps']['deviceName']
+        caps['appPackage'] = config['caps']['appPackage']
+        caps['appActivity'] = config['caps']['appActivity']
+        caps['automationName'] = config['caps']['automationName']
+        caps['noReset'] = config['caps']['noReset']
+        caps['ensureWebviewsHavePages'] = config['caps']['ensureWebviewsHavePages']
+        # caps['app'] = f'{os.path.abspath(os.curdir)}/app/ContactManager.apk'
+
+        self.driver = webdriver.Remote(appium_server_url, caps)
         self.driver.implicitly_wait(5)
 
     def teardown(self):
@@ -57,7 +63,7 @@ class TestAddMember:
         self.driver.find_element(MobileBy.XPATH, "//*[@text='手动输入添加']").click()
         self.driver.find_element(MobileBy.XPATH, "//*[@text='姓名　']/..//android.widget.EditText").send_keys(name)
         self.driver.find_element(MobileBy.XPATH, "//*[@text='手机　']/..//android.widget.EditText").send_keys(phone)
-        self.driver.find_element(MobileBy.XPATH, "//*[@text='保存']").click()
+        self.swipe_find('保存').click()
         # sleep(1)
         # print(self.driver.page_source)
         result = self.driver.find_element(MobileBy.XPATH, "//*[@class='android.widget.Toast']").text
